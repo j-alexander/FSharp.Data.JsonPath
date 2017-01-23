@@ -4,3 +4,5 @@ framework >= net40
 nuget FSharp.Data >= 2.3
 nuget NUnit
 nuget NUnit.Runners
+
+nuget Nuget.CommandLine

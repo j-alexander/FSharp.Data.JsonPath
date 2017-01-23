@@ -25,6 +25,7 @@ NUGET
       System.Security.Cryptography.Primitives (>= 4.3) - framework: >= net46
       System.Security.Cryptography.X509Certificates (>= 4.3) - framework: >= net46
       System.Threading.Timer (>= 4.3) - framework: >= net451
+    NuGet.CommandLine (3.5)
     NUnit (3.6)
       NETStandard.Library (>= 1.6) - framework: >= net463
       System.Runtime.Loader (>= 4.0) - framework: >= net463
