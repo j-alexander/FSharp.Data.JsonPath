@@ -31,7 +31,7 @@ A similar mechanism exists for Json, called JsonPath.
 
 Using JsonPath with F# typically involves converting data to Newtonsoft.Json's JObject type and invoking SelectToken. However, FSharp.Data has an elegant and functional representation of JsonValues that is very widely used.
 
-FSharp.Data.JsonPath can directly query subsets of a JsonValue document without converting your entire dataset to perform some extraction.
+**FSharp.Data.JsonPath** can directly query subsets of a JsonValue document without converting your entire dataset to perform some extraction.
 
 ## References
 
