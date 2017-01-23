@@ -1,0 +1,6 @@
+source https://api.nuget.org/v3/index.json
+framework >= net40
+
+nuget FSharp.Data >= 2.3
+nuget NUnit
+nuget NUnit.Runners
