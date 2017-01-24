@@ -69,7 +69,8 @@ module JsonPath =
 
             let pattern = 
                 "(?<quantifier>[\.]+)"+       // 1 or more '.' symbols
-                "(?<name>([^.\[])*)"+         // anything other than a '.' or '['
+                //"\[?(?<name>([^.\[\]])*)\]?"+         // anything other than a '.' or '['
+                "(?<name>([^.\[\]])*)"+         // anything other than a '.' or '['
                 "(\[(?<predicate>[^\]]*)\])*" // and optionally:
                                               //   '['
                                               //   anything other than ']'
