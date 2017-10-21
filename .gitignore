@@ -7,6 +7,8 @@
 *.userosscache
 *.sln.docstates
 
+.paket/Paket.Restore.targets
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
