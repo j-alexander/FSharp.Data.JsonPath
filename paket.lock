@@ -1,7 +1,6 @@
 RESTRICTION: >= net45
 NUGET
   remote: https://www.nuget.org/api/v2
-    FSharp.Core (4.1.18)
     NuGet.CommandLine (4.3)
     NUnit (3.8.1)
     NUnit.Console (3.8)
