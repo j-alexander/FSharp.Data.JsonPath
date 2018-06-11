@@ -4,5 +4,5 @@ install:
   - mono ./.paket/paket.bootstrapper.exe
   - mono ./.paket/paket.exe restore
 script:
-  - xbuild /p:Configuration=Release FSharp.Data.JsonPath.sln
+  - msbuild /p:Configuration=Release FSharp.Data.JsonPath.sln
   - mono ./packages/NUnit.ConsoleRunner/tools/nunit3-console.exe ./FSharp.Data.JsonPath.Tests/bin/Release/FSharp.Data.JsonPath.Tests.dll
