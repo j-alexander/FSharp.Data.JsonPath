@@ -7,4 +7,4 @@ install:
 script:
   - dotnet restore
   - msbuild /p:Configuration=Release FSharp.Data.JsonPath.sln
-  - mono ./packages/NUnit.ConsoleRunner/tools/nunit3-console.exe ./FSharp.Data.JsonPath.Tests/bin/Release/FSharp.Data.JsonPath.Tests.dll
+  - mono ./packages/NUnit.ConsoleRunner/tools/nunit3-console.exe ./FSharp.Data.JsonPath.Tests/bin/Release/net45/FSharp.Data.JsonPath.Tests.dll
