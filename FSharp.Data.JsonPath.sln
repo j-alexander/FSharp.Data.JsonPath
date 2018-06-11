@@ -1,16 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{21F5DF32-8586-44D9-B02A-E34E7C3E8581}"
 	ProjectSection(SolutionItems) = preProject
 		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Data.JsonPath", "FSharp.Data.JsonPath\FSharp.Data.JsonPath.fsproj", "{DB9BFA41-0B02-4D85-BCE8-B98B992A0350}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharp.Data.JsonPath", "FSharp.Data.JsonPath\FSharp.Data.JsonPath.fsproj", "{DB9BFA41-0B02-4D85-BCE8-B98B992A0350}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Data.JsonPath.Tests", "FSharp.Data.JsonPath.Tests\FSharp.Data.JsonPath.Tests.fsproj", "{1298CFF6-F1AD-4222-BE0F-9493034212E0}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharp.Data.JsonPath.Tests", "FSharp.Data.JsonPath.Tests\FSharp.Data.JsonPath.Tests.fsproj", "{1298CFF6-F1AD-4222-BE0F-9493034212E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5053EA49-13D8-4DCB-B281-F7C7AA7E336A}
 	EndGlobalSection
 EndGlobal

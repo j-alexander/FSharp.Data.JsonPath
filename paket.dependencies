@@ -3,7 +3,8 @@ framework >= net45
 
 nuget FSharp.Core
 nuget FSharp.Data
+
 nuget NUnit
-nuget NUnit.Runners
+nuget NUnit.Console
 
 nuget Nuget.CommandLine
