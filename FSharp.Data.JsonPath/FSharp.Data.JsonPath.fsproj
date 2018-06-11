@@ -16,5 +16,8 @@
     <Reference Include="System.Numerics" Condition="'$(TargetFramework)' == 'net45'" />
     <Reference Include="System.Xml.Linq" Condition="'$(TargetFramework)' == 'net45'" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Data" Version="2.4.2" Condition="'$(TargetFramework)' == 'net45'" />
+  </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
