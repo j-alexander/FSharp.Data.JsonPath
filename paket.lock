@@ -1,6 +1,6 @@
 RESTRICTION: >= net45
 NUGET
-  remote: https://api.nuget.org/v3/index.json
+  remote: https://nuget.org/api/v2
     FSharp.Core (4.0.0.1)
     FSharp.Data (2.4.2)
     Nuget.CommandLine (4.3)
