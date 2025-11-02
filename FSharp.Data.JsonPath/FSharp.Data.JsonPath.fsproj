@@ -1,24 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net80</TargetFramework>
+        <TargetFrameworks>net481;netstandard2.0;netcoreapp3.1;net80;net90</TargetFrameworks>
+
+        <!-- Attribution -->
+        <AssemblyTitle>FSharp.Data.JsonPath</AssemblyTitle>
         <Authors>Jonathan Leaver</Authors>
         <Copyright>© 2025 Jonathan Leaver</Copyright>
-        <PackageIconUrl>https://avatars3.githubusercontent.com/u/4975537</PackageIconUrl>
-        <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
-        <PackageProjectUrl>https://github.com/j-alexander/FSharp.Data.JsonPath</PackageProjectUrl>
-        <RepositoryType>git</RepositoryType>
-        <RepositoryUrl>https://github.com/j-alexander/FSharp.Data.JsonPath.git</RepositoryUrl>
         <Company>LambdaFun.com</Company>
         <Title>JsonPath for F# Data</Title>
         <Description>Query JsonValue documents from F# using ad-hoc JsonPath queries.</Description>
-        <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageTags>jsonpath;query;json;path;fsharp;data;fsharpdata;jsonvalue</PackageTags>
+
+        <Version>1.1.3</Version>
+        <AssemblyVersion>1.1.3.0</AssemblyVersion>
+        <FileVersion>1.1.3.0</FileVersion>
+        
+        <!-- Open Source Repository -->
+        <PackageProjectUrl>https://github.com/j-alexander/FSharp.Data.JsonPath</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/j-alexander/FSharp.Data.JsonPath.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageIcon>FSharp.Data.JsonPath.Icon.png</PackageIcon>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+        <!-- Basic Debug Info -->
+        <DebugType>embedded</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+        <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+
+        <!-- Deterministic Builds -->
+        <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="README.md" Pack="true" PackagePath="" />
+        <None Include="Icons\FSharp.Data.JsonPath.Banner.png" />
+        <None Include="Icons\FSharp.Data.JsonPath.Icon.png" Pack="true" PackagePath="" />
         <None Include="paket.references" />
         <Compile Include="JsonPath.fs" />
+        <None Include="README.md" Pack="true" PackagePath="" />
     </ItemGroup>
     <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
