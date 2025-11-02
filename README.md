@@ -1,8 +1,7 @@
 
 ## Build/Test Status
 
-  - `.NET` [![Appveyor](https://ci.appveyor.com/api/projects/status/qptiljoni4sbm3il?svg=true)](https://ci.appveyor.com/project/j-alexander/fsharp-data-jsonpath)
-  - `mono` [![Travis](https://api.travis-ci.org/j-alexander/FSharp.Data.JsonPath.svg)](https://travis-ci.org/j-alexander/FSharp.Data.JsonPath)
+  - `Tests on Appveyor` [![Appveyor](https://ci.appveyor.com/api/projects/status/qptiljoni4sbm3il?svg=true)](https://ci.appveyor.com/project/j-alexander/fsharp-data-jsonpath)
 
 ## Installation
 
@@ -16,7 +15,7 @@
    - Using [paket](https://fsprojects.github.io/Paket/):
 
      ```
-      >./.paket/paket.exe add nuget FSharp.Data.JsonPath project MyProject
+      >dotnet paket add --project MyProject FSharp.Data.JsonPath
      ```
 
 ## Overview

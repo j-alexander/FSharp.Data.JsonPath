@@ -1,0 +1,17 @@
+version: 1.0.{build}
+image: Ubuntu2204
+platform: Any CPU
+build_script:
+- sh: >-
+    sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0
+
+
+    dotnet tool restore
+
+    dotnet paket add --project FSharp.Data.JsonPath.Tests Appveyor.TestLogger
+
+    dotnet restore
+
+    dotnet build
+test_script:
+- sh: dotnet test --no-build --no-restore --test-adapter-path:. --logger:Appveyor

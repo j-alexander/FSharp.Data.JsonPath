@@ -1,20 +1,104 @@
-RESTRICTION: >= net45
 NUGET
-  remote: https://nuget.org/api/v2
-    FSharp.Core (4.0.0.1)
-    FSharp.Data (2.4.2)
-    Nuget.CommandLine (4.3)
-    NUnit (3.8.1)
-    NUnit.Console (3.8)
-      NUnit.ConsoleRunner (>= 3.8)
-      NUnit.Extension.NUnitProjectLoader (>= 3.5)
-      NUnit.Extension.NUnitV2Driver (>= 3.6)
-      NUnit.Extension.NUnitV2ResultWriter (>= 3.5)
-      NUnit.Extension.TeamCityEventListener (>= 1.0.3)
-      NUnit.Extension.VSProjectLoader (>= 3.7)
-    NUnit.ConsoleRunner (3.8)
-    NUnit.Extension.NUnitProjectLoader (3.6)
-    NUnit.Extension.NUnitV2Driver (3.7)
-    NUnit.Extension.NUnitV2ResultWriter (3.6)
-    NUnit.Extension.TeamCityEventListener (1.0.3)
-    NUnit.Extension.VSProjectLoader (3.7)
+  remote: https://www.nuget.org/api/v2
+    FSharp.Core (9.0.303)
+    FSharp.Data (6.6)
+      FSharp.Core (>= 6.0.1) - restriction: >= netstandard2.0
+      FSharp.Data.Csv.Core (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Html.Core (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Http (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Json.Core (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Runtime.Utilities (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.WorldBank.Core (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Xml.Core (>= 6.6) - restriction: >= netstandard2.0
+    FSharp.Data.Csv.Core (6.6) - restriction: >= netstandard2.0
+      FSharp.Core (>= 6.0.1) - restriction: >= netstandard2.0
+      FSharp.Data.Runtime.Utilities (>= 6.6) - restriction: >= netstandard2.0
+    FSharp.Data.Html.Core (6.6) - restriction: >= netstandard2.0
+      FSharp.Core (>= 6.0.1) - restriction: >= netstandard2.0
+      FSharp.Data.Csv.Core (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Runtime.Utilities (>= 6.6) - restriction: >= netstandard2.0
+    FSharp.Data.Http (6.6) - restriction: >= netstandard2.0
+      FSharp.Core (>= 6.0.1) - restriction: >= netstandard2.0
+    FSharp.Data.Json.Core (6.6) - restriction: >= netstandard2.0
+      FSharp.Core (>= 6.0.1) - restriction: >= netstandard2.0
+      FSharp.Data.Http (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Runtime.Utilities (>= 6.6) - restriction: >= netstandard2.0
+    FSharp.Data.Runtime.Utilities (6.6) - restriction: >= netstandard2.0
+      FSharp.Core (>= 6.0.1) - restriction: >= netstandard2.0
+      FSharp.Data.Http (>= 6.6) - restriction: >= netstandard2.0
+    FSharp.Data.WorldBank.Core (6.6) - restriction: >= netstandard2.0
+      FSharp.Core (>= 6.0.1) - restriction: >= netstandard2.0
+      FSharp.Data.Http (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Json.Core (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Runtime.Utilities (>= 6.6) - restriction: >= netstandard2.0
+    FSharp.Data.Xml.Core (6.6) - restriction: >= netstandard2.0
+      FSharp.Core (>= 6.0.1) - restriction: >= netstandard2.0
+      FSharp.Data.Http (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Json.Core (>= 6.6) - restriction: >= netstandard2.0
+      FSharp.Data.Runtime.Utilities (>= 6.6) - restriction: >= netstandard2.0
+    Microsoft.ApplicationInsights (2.23) - restriction: || (&& (>= net462) (>= netstandard2.0)) (>= netcoreapp3.1)
+      System.Diagnostics.DiagnosticSource (>= 5.0) - restriction: || (&& (>= net452) (< netstandard2.0)) (&& (< net452) (>= netstandard2.0)) (>= net46)
+    Microsoft.CodeCoverage (18.0) - restriction: || (>= net462) (>= net8.0)
+    Microsoft.NET.Test.Sdk (18.0)
+      Microsoft.CodeCoverage (>= 18.0) - restriction: || (>= net462) (>= net8.0)
+      Microsoft.TestPlatform.TestHost (>= 18.0) - restriction: >= net8.0
+    Microsoft.NETCore.Platforms (7.0.4) - restriction: || (&& (< net35) (>= netstandard2.0)) (>= netcoreapp2.0) (&& (< netstandard1.0) (>= netstandard2.0) (>= win8)) (&& (< netstandard1.3) (>= netstandard2.0) (< win8) (>= wpa81)) (&& (< netstandard1.5) (>= netstandard2.0) (>= uap10.0)) (&& (>= netstandard2.0) (>= uap10.1)) (&& (>= netstandard2.0) (>= wp8))
+    Microsoft.Testing.Extensions.Telemetry (2.0.1) - restriction: || (&& (>= net462) (>= netstandard2.0)) (>= netcoreapp3.1)
+      Microsoft.ApplicationInsights (>= 2.23) - restriction: >= netstandard2.0
+      Microsoft.Testing.Platform (>= 2.0.1) - restriction: >= netstandard2.0
+      System.Diagnostics.DiagnosticSource (>= 6.0) - restriction: && (< net8.0) (>= netstandard2.0)
+    Microsoft.Testing.Extensions.TrxReport.Abstractions (2.0.1) - restriction: || (&& (>= net462) (>= netstandard2.0)) (>= netcoreapp3.1)
+      Microsoft.Testing.Platform (>= 2.0.1) - restriction: >= netstandard2.0
+    Microsoft.Testing.Extensions.VSTestBridge (2.0.1) - restriction: || (>= net462) (>= netcoreapp3.1)
+      Microsoft.Testing.Extensions.Telemetry (>= 2.0.1) - restriction: >= netstandard2.0
+      Microsoft.Testing.Extensions.TrxReport.Abstractions (>= 2.0.1) - restriction: >= netstandard2.0
+      Microsoft.Testing.Platform (>= 2.0.1) - restriction: >= netstandard2.0
+      Microsoft.TestPlatform.AdapterUtilities (>= 18.0) - restriction: >= netstandard2.0
+      Microsoft.TestPlatform.ObjectModel (>= 18.0) - restriction: >= netstandard2.0
+    Microsoft.Testing.Platform (2.0.1) - restriction: || (&& (>= net462) (>= netstandard2.0)) (>= netcoreapp3.1)
+    Microsoft.Testing.Platform.MSBuild (2.0.1) - restriction: || (>= net462) (>= netcoreapp3.1)
+      Microsoft.Testing.Platform (>= 2.0.1) - restriction: >= netstandard2.0
+    Microsoft.TestPlatform.AdapterUtilities (18.0) - restriction: || (&& (>= net462) (>= netstandard2.0)) (>= netcoreapp3.1)
+    Microsoft.TestPlatform.ObjectModel (18.0) - restriction: || (&& (>= net462) (>= netstandard2.0)) (>= netcoreapp3.1)
+      System.Reflection.Metadata (>= 8.0) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.TestPlatform.TestHost (18.0) - restriction: >= net8.0
+      Microsoft.TestPlatform.ObjectModel (>= 18.0) - restriction: >= net8.0
+      Newtonsoft.Json (>= 13.0.3) - restriction: >= net8.0
+    NETStandard.Library (2.0.3) - restriction: && (< net35) (>= netstandard2.0)
+      Microsoft.NETCore.Platforms (>= 1.1) - restriction: || (&& (>= net45) (< netstandard1.3)) (&& (< net45) (>= netstandard1.1) (< netstandard1.2) (< win8)) (&& (< net45) (>= netstandard1.2) (< netstandard1.3) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.3) (< netstandard1.4) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.4) (< netstandard1.5) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.5) (< netstandard1.6) (< win8) (< wpa81)) (&& (< net45) (>= netstandard1.6) (< netstandard2.0) (< win8) (< wpa81)) (&& (< net45) (>= netstandard2.0)) (&& (>= net46) (< netstandard1.4)) (>= net461) (>= netcoreapp2.0) (&& (>= netstandard1.0) (< portable-net45+win8+wpa81)) (&& (< netstandard1.0) (>= portable-net45+win8) (< win8)) (&& (< netstandard1.0) (< portable-net45+win8) (>= portable-net45+win8+wpa81)) (&& (< netstandard1.0) (>= portable-net45+win8+wp8+wpa81) (< portable-net45+win8+wpa81)) (&& (< netstandard1.0) (>= win8)) (&& (< netstandard1.3) (< win8) (>= wpa81)) (&& (< netstandard1.5) (>= uap10.0)) (>= uap10.1) (>= wp8)
+    Newtonsoft.Json (13.0.4) - restriction: >= net8.0
+    NuGet.CommandLine (6.14)
+    NUnit (3.14)
+      NETStandard.Library (>= 2.0) - restriction: && (< net35) (>= netstandard2.0)
+    NUnit.Console (3.20.2)
+      NUnit.ConsoleRunner (>= 3.20.2)
+      NUnit.Extension.NUnitProjectLoader (>= 3.8)
+      NUnit.Extension.NUnitV2Driver (>= 3.9)
+      NUnit.Extension.NUnitV2ResultWriter (>= 3.8)
+      NUnit.Extension.TeamCityEventListener (>= 1.0.10)
+      NUnit.Extension.VSProjectLoader (>= 3.9)
+    NUnit.ConsoleRunner (3.20.2)
+    NUnit.Extension.NUnitProjectLoader (3.8)
+    NUnit.Extension.NUnitV2Driver (3.9)
+    NUnit.Extension.NUnitV2ResultWriter (3.8)
+    NUnit.Extension.TeamCityEventListener (1.0.10)
+    NUnit.Extension.VSProjectLoader (3.9)
+    NUnit3TestAdapter (5.2)
+      Microsoft.Testing.Extensions.VSTestBridge (>= 1.9) - restriction: || (>= net462) (>= netcoreapp3.1)
+      Microsoft.Testing.Platform.MSBuild (>= 1.9) - restriction: || (>= net462) (>= netcoreapp3.1)
+    System.Buffers (4.6.1) - restriction: || (&& (>= net462) (>= netcoreapp3.1)) (&& (>= net462) (>= netstandard2.0)) (&& (< netcoreapp2.1) (>= netcoreapp3.1) (< netstandard2.1))
+    System.Collections.Immutable (9.0.10) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net462) (>= netcoreapp3.1)) (&& (>= net462) (>= netstandard2.0)) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netcoreapp3.1))
+      System.Memory (>= 4.5.5) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
+      System.Runtime.CompilerServices.Unsafe (>= 6.0) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
+    System.Diagnostics.DiagnosticSource (9.0.10) - restriction: || (&& (>= net462) (>= netstandard2.0)) (>= netcoreapp3.1)
+      System.Memory (>= 4.5.5) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
+      System.Runtime.CompilerServices.Unsafe (>= 6.0) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
+    System.Memory (4.6.3) - restriction: || (&& (>= net462) (>= netcoreapp3.1)) (&& (>= net462) (>= netstandard2.0)) (&& (< net8.0) (>= netcoreapp3.1))
+      System.Buffers (>= 4.6.1) - restriction: || (>= net462) (&& (< netcoreapp2.1) (>= netstandard2.0) (< netstandard2.1))
+      System.Numerics.Vectors (>= 4.6.1) - restriction: || (>= net462) (&& (< netcoreapp2.1) (>= netstandard2.0) (< netstandard2.1))
+      System.Runtime.CompilerServices.Unsafe (>= 6.1.2) - restriction: || (>= net462) (&& (< netcoreapp2.1) (>= netstandard2.0) (< netstandard2.1))
+    System.Numerics.Vectors (4.6.1) - restriction: || (&& (>= net462) (>= netcoreapp3.1)) (&& (>= net462) (>= netstandard2.0)) (&& (< netcoreapp2.1) (>= netcoreapp3.1) (< netstandard2.1))
+    System.Reflection.Metadata (9.0.10) - restriction: || (&& (>= net462) (>= netstandard2.0)) (>= netcoreapp3.1)
+      System.Collections.Immutable (>= 9.0.10) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
+      System.Memory (>= 4.5.5) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
+    System.Runtime.CompilerServices.Unsafe (6.1.2) - restriction: || (&& (>= net462) (>= netcoreapp3.1)) (&& (>= net462) (>= netstandard2.0)) (&& (< net8.0) (>= netcoreapp3.1)) (&& (< netcoreapp2.1) (>= netcoreapp3.1) (< netstandard2.1))
