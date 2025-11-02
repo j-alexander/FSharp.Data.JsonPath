@@ -1,22 +1,27 @@
+![FSharp.Data.JsonPath](./FSharp.Data.JsonPath/Icons/FSharp.Data.JsonPath.Banner.png)
+
+
+### For Developer examples, see [FSharp.Data.JsonPath README](./FSharp.Data.JsonPath/README.md)
 
 ## Build/Test Status
 
-  - `Tests on Appveyor` [![Appveyor](https://ci.appveyor.com/api/projects/status/qptiljoni4sbm3il?svg=true)](https://ci.appveyor.com/project/j-alexander/fsharp-data-jsonpath)
+- [![Appveyor](https://ci.appveyor.com/api/projects/status/qptiljoni4sbm3il?svg=true)](https://ci.appveyor.com/project/j-alexander/fsharp-data-jsonpath)
+   - Automated Tests on Appveyor, see also [Appveyor.yml](./appveyor.yml)
 
 ## Installation
 
- - `NuGet` [![NuGet](https://img.shields.io/nuget/v/FSharp.Data.JsonPath.svg?style=flat)](https://www.nuget.org/packages/FSharp.Data.JsonPath/)
-   - Using the Package Manager Console:
+- [![NuGet](https://img.shields.io/nuget/v/FSharp.Data.JsonPath.svg?style=flat)](https://www.nuget.org/packages/FSharp.Data.JsonPath/)
+  - Using the Package Manager Console:
 
-     ```
-      PM> Install-Package FSharp.Data.JsonPath
-     ```
+    ```
+     PM> Install-Package FSharp.Data.JsonPath
+    ```
 
-   - Using [paket](https://fsprojects.github.io/Paket/):
+  - Using [paket](https://fsprojects.github.io/Paket/):
 
-     ```
+    ```
       >dotnet paket add --project MyProject FSharp.Data.JsonPath
-     ```
+    ```
 
 ## Overview
 
@@ -34,4 +39,4 @@ Using JsonPath with F# typically involves converting data to Newtonsoft.Json's J
 
 ## References
 
- - Design - [https://j-alexander.github.io/entry/2016/12/23/jsonpath-queries-using-fsharpdata](https://j-alexander.github.io/entry/2016/12/23/jsonpath-queries-using-fsharpdata)
+ - Source Article (2016) - [https://j-alexander.github.io/entry/2016/12/23/jsonpath-queries-using-fsharpdata](https://j-alexander.github.io/entry/2016/12/23/jsonpath-queries-using-fsharpdata)
