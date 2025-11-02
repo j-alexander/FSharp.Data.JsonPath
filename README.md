@@ -16,7 +16,7 @@
    - Using [paket](https://fsprojects.github.io/Paket/):
 
      ```
-      >./.paket/paket.exe add nuget FSharp.Data.JsonPath project MyProject
+      >dotnet paket add --project MyProject FSharp.Data.JsonPath
      ```
 
 ## Overview
