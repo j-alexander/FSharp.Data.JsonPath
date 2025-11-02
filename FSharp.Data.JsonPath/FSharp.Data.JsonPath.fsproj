@@ -1,20 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>net45</TargetFrameworks>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="paket.references" />
-    <None Include="paket.template" />
-    <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="JsonPath.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="mscorlib" Condition="'$(TargetFramework)' == 'net45'" />
-    <Reference Include="System" Condition="'$(TargetFramework)' == 'net45'" />
-    <Reference Include="System.Core" Condition="'$(TargetFramework)' == 'net45'" />
-    <Reference Include="System.Numerics" Condition="'$(TargetFramework)' == 'net45'" />
-    <Reference Include="System.Xml.Linq" Condition="'$(TargetFramework)' == 'net45'" />
-  </ItemGroup>
-  <Import Project="..\.paket\Paket.Restore.targets" />
+    <PropertyGroup>
+        <TargetFramework>net80</TargetFramework>
+        <Authors>Jonathan Leaver</Authors>
+        <Copyright>© 2025 Jonathan Leaver</Copyright>
+        <PackageIconUrl>https://avatars3.githubusercontent.com/u/4975537</PackageIconUrl>
+        <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/j-alexander/FSharp.Data.JsonPath</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/j-alexander/FSharp.Data.JsonPath.git</RepositoryUrl>
+        <Company>LambdaFun.com</Company>
+        <Title>JsonPath for F# Data</Title>
+        <Description>Query JsonValue documents from F# using ad-hoc JsonPath queries.</Description>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageTags>jsonpath;query;json;path;fsharp;data;fsharpdata;jsonvalue</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="paket.references" />
+        <Compile Include="JsonPath.fs" />
+        <Content Include="README.md" />
+    </ItemGroup>
+    <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

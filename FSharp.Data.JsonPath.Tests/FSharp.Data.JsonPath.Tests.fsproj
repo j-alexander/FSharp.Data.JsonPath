@@ -1,25 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net45</TargetFramework>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-  </PropertyGroup>
-  <ItemGroup>
-    <Content Include="paket.references" />
-    <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="QueryParser.fs" />
-    <Content Include="app.config" />
-    <Compile Include="Search.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="mscorlib" Condition="'$(TargetFramework)' == 'net45'" />
-    <Reference Include="System" Condition="'$(TargetFramework)' == 'net45'" />
-    <Reference Include="System.Core" Condition="'$(TargetFramework)' == 'net45'" />
-    <Reference Include="System.Numerics" Condition="'$(TargetFramework)' == 'net45'" />
-    <Reference Include="System.Xml.Linq" Condition="'$(TargetFramework)' == 'net45'" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FSharp.Data.JsonPath\FSharp.Data.JsonPath.fsproj" />
-  </ItemGroup>
-  <Import Project="..\.paket\Paket.Restore.targets" />
+    <PropertyGroup>
+        <TargetFramework>net80</TargetFramework>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <Authors>Jonathan Leaver</Authors>
+        <Copyright>© 2025 Jonathan Leaver</Copyright>
+        <PackageIconUrl>https://avatars3.githubusercontent.com/u/4975537</PackageIconUrl>
+        <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/j-alexander/FSharp.Data.JsonPath</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/j-alexander/FSharp.Data.JsonPath.git</RepositoryUrl>
+        <Company>LambdaFun.com</Company>
+        <Description>Testing JsonPath query support for FSharp.Data.JsonValue</Description>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="paket.references" />
+        <Compile Include="QueryParser.fs" />
+        <Compile Include="Search.fs" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\FSharp.Data.JsonPath\FSharp.Data.JsonPath.fsproj" />
+    </ItemGroup>
+    <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

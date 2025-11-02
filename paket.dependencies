@@ -1,10 +1,11 @@
-source https://nuget.org/api/v2
-framework >= net45
+source https://www.nuget.org/api/v2/
 
 nuget FSharp.Core
 nuget FSharp.Data
+nuget Microsoft.NET.Test.Sdk
 
-nuget NUnit
+nuget NUnit ~> 3
 nuget NUnit.Console
 
 nuget Nuget.CommandLine
+nuget NUnit3TestAdapter
