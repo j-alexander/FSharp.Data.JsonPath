@@ -1,4 +1,4 @@
-F# has been characterized as a modern programming language well-suited to data-rich analytical problems. In this language, interacting wit  h diverse datasets from event streams, web services, and databases is further simplified with the open-source FSharp.Data library.
+F# has been characterized as a modern programming language well-suited to data-rich analytical problems. In this language, interacting with diverse datasets from event streams, web services, and databases is further simplified with the open-source FSharp.Data library.
 
 Many of these real-world documents are hierarchically structured in Json and Xml. When designing reusable applications and algorithms in this space, it becomes very important to be able to extract subsets of data using custom queries.
 

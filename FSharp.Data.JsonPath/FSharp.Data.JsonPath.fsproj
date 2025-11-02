@@ -16,9 +16,9 @@
         <PackageTags>jsonpath;query;json;path;fsharp;data;fsharpdata;jsonvalue</PackageTags>
     </PropertyGroup>
     <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="" />
         <None Include="paket.references" />
         <Compile Include="JsonPath.fs" />
-        <Content Include="README.md" />
     </ItemGroup>
     <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
