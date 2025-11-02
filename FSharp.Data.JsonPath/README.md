@@ -11,12 +11,12 @@ JsonPath queries for FSharp.Data’s JsonValue. Find the parts of a JSON documen
 
 - Using the Package Manager Console:
 ```
-PM> Install-Package FSharp.Data.JsonPath
+  PM> Install-Package FSharp.Data.JsonPath
 ```
 
 - Using [paket](https://fsprojects.github.io/Paket/):
 ```
-> dotnet paket add FSharp.Data.JsonPath --project MyProject
+  > dotnet paket add FSharp.Data.JsonPath --project MyProject
 ```
 
 ## Quick start
@@ -89,8 +89,8 @@ Get a value by path:
 
 Gather all nested occurrences of a key:
 ``` fsharp
-// F#
-json |> JsonPath.findList "$..price"
+  // F#
+  json |> JsonPath.findList "$..price"
 ```
 
 Select all items from any array named "items":
@@ -101,8 +101,8 @@ Select all items from any array named "items":
 
 Safely try for an optional field:
 ``` fsharp
-// F#
-json |> JsonPath.tryFind "$.profile.address.postcode"
+  // F#
+  json |> JsonPath.tryFind "$.profile.address.postcode"
 ```
 
 Last element of any "book" array:
@@ -113,10 +113,10 @@ Last element of any "book" array:
 
 Top sellers under $10 across a catalog:
 ``` fsharp
-// F#
-json
-|> JsonPath.findList "$..book[?(@.price<10)]"
-|> List.map (fun b -> b)
+  // F#
+  json
+  |> JsonPath.findList "$..book[?(@.price<10)]"
+  |> List.map (fun b -> b)
 ```
 
 Extract all leaf values:
@@ -127,9 +127,9 @@ Extract all leaf values:
 
 Work with root arrays:
 ``` fsharp
-// F#
-let arr = JsonValue.Parse """[ { "a": 1 }, { "a": 2 } ]"""
-let values = arr |> JsonPath.findList "$.[*].a"
+  // F#
+  let arr = JsonValue.Parse """[ { "a": 1 }, { "a": 2 } ]"""
+  let values = arr |> JsonPath.findList "$.[*].a"
 ```
 
 ### Real-world scenarios
